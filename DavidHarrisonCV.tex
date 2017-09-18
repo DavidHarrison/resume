@@ -1,0 +1,108 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,letterpaper,sans]{moderncv}
+
+% moderncv themes
+\moderncvstyle{banking} % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue}
+
+% adjust the page margins
+\usepackage[scale=0.90]{geometry}
+\usepackage{enumitem}
+
+\newcommand\myitem{\item[\textbullet]\hspace*{.5em}}
+
+% personal data
+\name{David}{Harrison}
+\address{2231 Ward St. Unit C}{Berkeley, CA 94705}
+\phone[mobile]{(510)~717~8762}
+\email{dharrison@berkeley.edu}
+\social[linkedin]{DavidJRHarrison}
+\social[github]{DavidHarrison}
+% \social[twitter]{DavidJRHarrison}
+\begin{document}
+\makecvtitle
+
+\section{Education}
+\cventry{May 2019}{University of California, Berkeley}{Berkeley, CA}{}{3.92 GPA}{
+Computer Science Major \\
+\setlength{\tabcolsep}{6pt}
+\begin{tabular}{l l l l}
+  \textbf{CS 61A}    & The Structure and Interpretation of Computer Progams      & \textbf{A\texttt{+}} \\
+  \textbf{CS 61B}    & Data Structures                                           & \textbf{A\texttt{+}} \\
+  \textbf{CS 61C}    & Great Ideas in Computer Architecture (Machine Structures) & \textbf{A} \\
+  \textbf{CS 70}     & Discrete Mathematics and Probability Theory               & \textbf{A} \\
+  \textbf{CS 170}    & Efficient Algorithms and Intractable Problems             & \textbf{In Progress} \\
+  \textbf{CS 188}    & Introduction to Artificial Intelligence                   & \textbf{A} \\
+  \textbf{CS 195}    & Social Implications of Computing													 & \textbf{In Progress} \\
+  \textbf{CS 375}    & Teaching Techniques for Computer Science                  & \textbf{P} \\
+  \textbf{EE 16A}    & Designing Information Devices and Systems I							 & \textbf{In Progress} \\
+  \textbf{MATH 54}   & Linear Algebra and Differential Equations                 & \textbf{B\texttt{+}} \\
+  \textbf{MATH 110}  & Linear Algebra																						 & \textbf{In Progress} \\
+  \textbf{MATH 113}  & Abstract Algebra                                          & \textbf{A}
+\end{tabular}
+}
+
+\section{Experience}
+\cventry{Jan - May 2017}{Reader -- CS 188}{UC Berkeley}{Berkeley, CA}{}{
+  \begin{itemize}[topsep=0pt,itemsep=-1ex,partopsep=1ex,parsep=1ex]
+    \myitem Holding office hours to help students with homework and projects
+    \myitem Helping develop and administer exams
+  \end{itemize}
+}\medskip
+
+\cventry{Aug - Dec 2016}{Teaching Assistant -- CS 61A}{\href{http://cs61a.org/}{UC Berkeley}}{Berkeley, CA}{}{
+  \begin{itemize}[topsep=0pt,itemsep=-1ex,partopsep=1ex,parsep=1ex]
+    \myitem Leading discussions and labs
+    \myitem Participating in the writing and grading of exams
+    \myitem Holding office hours to help students with homework and projects
+  \end{itemize}
+}\medskip
+
+\cventry{Feb 2015 - Present}{Software Developer}{\href{https://www.codevolve.com/}{Codevolve}}{Alameda, CA}{}{
+  \begin{itemize}[topsep=0pt,itemsep=-1ex,partopsep=1ex,parsep=1ex]
+		\myitem Building a secure, scalable and performant backend for running and storing code using technoligies such as Gitolite and AWS
+    \myitem Built a portable development environment using Docker
+    \myitem Frontend development in React
+    \myitem Backend development using Ruby on Rails and Flask
+  \end{itemize}
+}\medskip
+
+\cventry{June - Aug 2014}{Junior Software Developer}{\href{http://www.dgi.com/}{Dynamic Graphics Inc.}}{Alameda, CA}{}{
+	Designed, built and deployed a regression testing framework using Python
+	and the Robot Framework including:
+  \begin{itemize}[topsep=0pt,itemsep=-1ex,partopsep=1ex,parsep=1ex]
+    \myitem Integration for existing test scripts (Bash and Python)
+    \myitem Parsers for various data formats
+    \myitem Parallel test execution
+  \end{itemize}
+}\medskip
+
+%\section{Projects}
+%\cvitem{Elm Life}{
+%	\begin{itemize}[topsep=0pt,itemsep=-1ex,partopsep=1ex,parsep=1ex]
+%    \myitem Experimented with Elm by building Conway's Game of Life using the zipper data structure.
+%					  Code can be found at https://github.com/DavidHarrison/ElmLife.
+%  \end{itemize}
+%}
+
+%\cvitem{Grading API}{
+%	\begin{itemize}[topsep=0pt,itemsep=-1ex,partopsep=1ex,parsep=1ex]
+%    \myitem Provided a programmatic (Python) interface to Albany High School's grading website (Aeries).
+%  \end{itemize}
+%}
+
+% \section{Skills}
+% \cvitem{Languages}{Python, Ruby, Haskell, JavaScript, C, OCaml, Java, Elm, PureScript}
+% \cvitem{Frameworks}{Ruby on Rails, Flask, React}
+% \cvitem{Utilities}{Linux, Docker, Git, \LaTeX}
+%\cvitem{Languages}{French (Working Proficiency)}
+
+\clearpage
+\end{document}
